@@ -1,27 +1,17 @@
 
 import React from 'react'
-import ReactDOM from 'react-dom'
-import NavBar from './components/navbar.jsx'
-import Base from './components/base.jsx'
-import Footer from './components/footer.jsx'
 import PlaceCards from './components/placecards.jsx'
 import pCards from './components/data.js'
 import ChefNav from './chef/chefnav.jsx'
 import ChefMain from './chef/chefmain.jsx'
-import StateTest from './chef/statetest.jsx'
-import Form from './chef/form.jsx'
-import RenderingPrac from './chef/renderingrprac.jsx'
-import GetRecipe from './chef/getrecipe.jsx'
 import pads from "./pads.js"
-import { BiFontSize } from 'react-icons/bi'
-import ClaudeRecipe from './chef/clauderecipe.jsx'
 import "./pad.css"
 import "./index.css"
 import "./chef/chefmain.css"
 import "./chef/chefnav.css"
 import "./chef/getrecipe.css"
-import "./placeCards.css"
-import { VITE_HF_API_TOKEN } from './chef/env.js'
+
+
 
 
 

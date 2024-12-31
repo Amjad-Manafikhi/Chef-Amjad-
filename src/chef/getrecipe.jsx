@@ -6,7 +6,7 @@ import  ClaudeRecipe from "./clauderecipe"
 
 export default function GetRecipe(props){
 
-     .log("GetRecipe");
+   
 
     return(
         <div>

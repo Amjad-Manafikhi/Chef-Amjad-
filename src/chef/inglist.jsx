@@ -3,7 +3,7 @@ import AddIng from "./adding"
 
 export default function IngList(props){
     
-    console.log("IngList")
+     .log("IngList")
     const elementsIng= props.ingredients.map(
         (name ,index) => <AddIng key={index} ingName={name}/>
     )

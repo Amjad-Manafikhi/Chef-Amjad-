@@ -8,7 +8,7 @@ import IngList from  "./inglist.jsx"
 
 
 export default function ChefMain (props) {
-    console.log("Main");
+    
     
     const [ingredients,setIngredients]=React.useState([]);
     

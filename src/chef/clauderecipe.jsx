@@ -4,11 +4,11 @@ import { getRecipeFromMistral } from "./ai";
 
 export default function ClaudeRecipe({ ingredients }) {
     const [response, setResponse] = useState("");
-    console.log(ingredients);
+     .log(ingredients);
 
     useEffect(() => {
         async function fetchRecipe() {
-            console.log("Fetching recipe...");
+             .log("Fetching recipe...");
             const result = await getRecipeFromMistral(ingredients);
             setResponse(result); // Set the response state
         }

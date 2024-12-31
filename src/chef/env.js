@@ -1,0 +1,1 @@
+export const VITE_HF_API_TOKEN = "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"

@@ -1,0 +1,27 @@
+.submitContainer{
+    display:flex;
+    background-color:rgb(230,228,226);
+    border-radius: 7px;
+    align-items:center ;
+    justify-content: center;
+    padding:10px;
+    margin-bottom:20px;
+    
+}
+.submitDiv{
+    display:flex;
+    flex-direction: column;
+    
+}
+.submitButton{
+    background-color:rgb(202,107,78) !important; 
+
+}
+.submitPara{
+    color:grey;
+    margin:5px 0px;
+    font-size: 14px;
+}
+h3{
+    margin:5px 0px;
+}

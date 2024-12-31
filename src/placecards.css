@@ -1,0 +1,43 @@
+.container{
+    background-color: white;
+    width:550px;
+    height:auto;
+    border-radius:10px;
+    display: flex;
+    padding:10px;
+    flex-wrap: wrap;
+    margin :auto;
+    margin: 20px;
+}
+.basic{
+    height:230px;
+    width:30%;
+    border-radius:7px ;
+    margin:0px;
+    
+}
+.marker{
+    width:10px;
+    height:13px;
+    margin:1px 0px;
+}
+.informContainter{
+    display: flex;
+    margin-left:20px;
+    width:65%;
+    flex-wrap: wrap;
+    
+}
+.informContainter > h4{
+    margin:0px 5px
+}
+.informContainter > a{
+    margin:0px 10px;
+
+}
+.informContainter > h1 , .informContainter >h3 , .informContainter > p    {
+    margin:0px;
+
+}
+
+

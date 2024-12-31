@@ -1,0 +1,62 @@
+
+html{
+  width:100%;
+  font-family: "Inter", serif;
+}
+
+.root{
+  width:100%;
+}
+.cardContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  width:500px;
+  padding:0px 30px;;
+
+
+  
+ }
+body{
+  width:100%;
+  margin: 1px;
+  background-color: #FAFAF8;
+}
+@media screen and (max-width:550px){
+  .page{
+    width:400px ;
+  }
+  input{
+    width:200px !important;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .submitContainer{
+    flex-direction:column;
+  }
+  .page{
+    width: 300px;
+  }
+  span{
+    display: none;
+  }
+  .addButton{
+    width:40px;
+  }
+  
+}
+@media screen and (max-width:340px){
+  .page{
+    width:250px ;
+  }
+  input{
+    width:150px !important;
+  }
+}
+

@@ -1,0 +1,19 @@
+.navTitle{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    border:solid 1px grey;
+    border-radius: 4px;;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    gap:10px;
+}
+
+
+.navTitle > img{
+    
+    width:50px;
+}
+ .navTitle > h1{
+    font-weight: 500;
+ }

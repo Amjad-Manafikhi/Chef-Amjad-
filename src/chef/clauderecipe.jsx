@@ -7,6 +7,7 @@ export default function ClaudeRecipe({ ingredients }) {
      
 
     useEffect(() => {
+        setResponse(undefined)
         async function fetchRecipe() {
             
             const result = await getRecipeFromMistral(ingredients);

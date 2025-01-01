@@ -9,14 +9,15 @@ import IngList from  "./inglist.jsx"
 
 export default function ChefMain (props) {
     
-    
+    const [formClass,setFormClass]=React.useState();
     const [ingredients,setIngredients]=React.useState([]);
     
     
     function handleNewingredient(formData){
         let ingredientName=formData.get("ingredient");
-        if(ingredientName.length===0){alert("please fill ingredient field")}
+        if(ingredientName.length===0){setFormClass({borderColor:"red"}) }
         else {
+            setFormClass({borderColor:"black"})
         setIngredients(() => [...ingredients,ingredientName]);
         props.handle(ingredients.length+1/*,getRecipeFromMistral(ingredients)*/)
         }
@@ -31,6 +32,7 @@ export default function ChefMain (props) {
         <main>
             <form action={handleNewingredient} >
                 <input 
+                    style={formClass}
                     aria-label="Add ingredient"
                     type="text"
                     placeholder="e.g. flour"

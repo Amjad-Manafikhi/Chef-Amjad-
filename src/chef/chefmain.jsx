@@ -39,7 +39,7 @@ export default function ChefMain (props) {
                     type="text"
                     placeholder={unvalid}
                     name="ingredient"
-                     pattern=".*\S.*"
+                    pattern=".*\S.*"
                      
                     />
                 <button className="addButton" >+ <span>Add ingredient</span></button>

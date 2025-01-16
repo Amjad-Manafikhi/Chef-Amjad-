@@ -5,7 +5,8 @@ import  ClaudeRecipe from "./clauderecipe"
 
 
 export default function GetRecipe(props){
-
+    const ingredients=props.ingredients
+    const scrollToRecipe =React.useRef(null);
    
 
     return(
@@ -18,7 +19,7 @@ export default function GetRecipe(props){
                 </div >    
                 <button className="submitButton" onClick={() => props.handle()}>Get a recipe</button>
             </div>
-                {props.isRecipeShown && <ClaudeRecipe ingredients={props.ingredients} />}
+                {props.isRecipeShown && <ClaudeRecipe ingredients={props.ingredients}  ref={scrollToRecipe}/>}
 
             
         </div>

@@ -73,6 +73,7 @@ export default function App() {
   return (
     <div className="cardContainer" >
       <ChefNav />
+
       <div className='page'>
         <ChefMain size={arrSize} handle={ingNumber} arrSize={arrSize} isRecipeShown={isRecipeShown} handleGetRecipe={handleGetRecipe}/>
         
@@ -80,12 +81,6 @@ export default function App() {
         
       </div>
       
-      
-      
-
-      
-
-
     </div>
     
   );

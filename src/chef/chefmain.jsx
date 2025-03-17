@@ -5,7 +5,7 @@ import AddIng from  "./adding.jsx"
 import GetRecipe from  "./getrecipe.jsx"
 import IngList from  "./inglist.jsx"
 //import { getRecipeFromMistral } from "./ai"
-
+import Speech from './Speech.jsx';
 
 export default function ChefMain (props) {
     
@@ -25,12 +25,17 @@ export default function ChefMain (props) {
         }
         
     }
+    function handleIngFromSpeech(Ing){
+        setIngredients(prev => [...prev,Ing])
+    }
 
     
     
     
     
     return (
+        <>
+        <Speech timeout="10" handleIngFromSpeech={handleIngFromSpeech}/>
         <main>
             <form action={handleNewingredient} >
                 <input 
@@ -45,7 +50,7 @@ export default function ChefMain (props) {
                 <button className="addButton" >+ <span>Add ingredient</span></button>
             </form>
             <IngList ingredients={ingredients}/>
-            {props.arrSize >2 && <GetRecipe handle={props.handleGetRecipe} isRecipeShown={props.isRecipeShown} ingredients={ingredients}/>}
+            {ingredients.length>2 && <GetRecipe handle={props.handleGetRecipe} isRecipeShown={props.isRecipeShown} ingredients={ingredients}/>}
              
 
              
@@ -54,6 +59,7 @@ export default function ChefMain (props) {
           
         
         </main>
+        </>
 
 
     )

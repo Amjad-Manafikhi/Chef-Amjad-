@@ -25,7 +25,7 @@ export default function ClaudeRecipe(props) {
    React.useEffect( () => {
         if(props.ref!==null) props.ref.current.scrollIntoView({behavior:"smooth"});    
    },[response])
-    
+        
 
 
     

@@ -45,6 +45,7 @@ git clone https://github.com/yourusername/chef-amjad.git
 cd chef-amjad
 npm install
 npm run dev
+```
 ---
 
 ## 💡 Future Enhancements (Ideas)
